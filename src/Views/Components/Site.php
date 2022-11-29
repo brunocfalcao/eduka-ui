@@ -1,28 +1,18 @@
 <?php
 
-namespace Eduka\Nereus\Views\Components;
+namespace Eduka\UI\Views\Components;
 
 use Illuminate\View\Component;
 
 class Site extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         //
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
-     */
     public function render()
     {
-        return view('eduka::components.site');
+        return view('eduka-ui::components.site');
     }
 }

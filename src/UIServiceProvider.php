@@ -2,13 +2,18 @@
 
 namespace Eduka\UI;
 
-use Illuminate\Support\ServiceProvider;
+use Eduka\Abstracts\Classes\EdukaServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
-class UIServiceProvider extends ServiceProvider
+class UIServiceProvider extends EdukaServiceProvider
 {
     public function boot()
     {
+        $this->customViewNamespace(__DIR__.'/../resources/views', 'eduka-ui');
+
         $this->registerBladeComponents();
+
+        parent::boot();
     }
 
     public function register()
@@ -18,7 +23,6 @@ class UIServiceProvider extends ServiceProvider
 
     protected function registerBladeComponents()
     {
-        // Register blade components namespace.
         Blade::componentNamespace('Eduka\\UI\\Views\\Components', 'eduka');
     }
 }
