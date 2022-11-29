@@ -1,2 +1,2 @@
 # eduka-ui
- Eduka LMS
+ Eduka UI
