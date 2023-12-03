@@ -1,6 +1,6 @@
 <?php
 
-namespace Brunocfalcao\ZeptoMailApiDriver;
+namespace Brunocfalcao\EdukaUI;
 
 use Illuminate\Support\ServiceProvider;
 
