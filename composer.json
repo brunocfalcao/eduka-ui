@@ -1,0 +1,38 @@
+{
+    "name": "brunocfalcao/eduka-ui",
+    "description": "Eduka UI library",
+    "keywords": [
+        "brunocfalcao"
+    ],
+    "homepage": "https://github.com/brunocfalcao/brunocfalcao/eduka-ui",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bruno Falcão",
+            "email": "bruno.c.falcao@brunofalcao.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brunocfalcao\\EdukaUI\\": "src/"
+        }
+    }
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brunocfalcao\\EdukaUI\\EdukaUIServiceProvider"
+            ]
+        }
+    }
+}
