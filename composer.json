@@ -22,7 +22,7 @@
         "psr-4": {
             "Brunocfalcao\\EdukaUI\\": "src/"
         }
-    }
+    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
