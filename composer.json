@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Brunocfalcao\\EdukaUI\\": "src/"
+            "Eduka\\UI\\": "src/"
         }
     },
     "config": {
@@ -31,8 +31,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Brunocfalcao\\EdukaUI\\EdukaUIServiceProvider"
-            ]
+                "Eduka\\UI\\UIServiceProvider"
+            ],
+            "aliases": {
+                "UI": "Eduka\\UI\\Facades\\UI"
+            }
         }
     }
 }
