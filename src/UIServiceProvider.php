@@ -2,8 +2,10 @@
 
 namespace Eduka\UI;
 
+use Eduka\UI\BladeDirectives;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use ImLiam\BladeHelper\Facades\BladeHelper;
 
 class UIServiceProvider extends ServiceProvider
 {
@@ -17,6 +19,10 @@ class UIServiceProvider extends ServiceProvider
 <meta name="<?= e($tag) ?>" content="<?= e($value) ?>" />
 <?php endforeach; ?>
 <link rel="canonical" href="https://silver-surfer.masteringnova.com/" />';
+        });
+
+        BladeHelper::directive('ui_metas', function ($model) {
+            return BladeDirectives::metas($model);
         });
     }
 
