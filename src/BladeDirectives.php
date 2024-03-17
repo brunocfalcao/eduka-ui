@@ -13,9 +13,9 @@ class BladeDirectives
     {
         $metaTags = $model->metas();
 
-        $html = "";
+        $html = '';
 
-        foreach ((array)$metaTags as $key => $value) {
+        foreach ((array) $metaTags as $key => $value) {
             // 'name|twitter:description' => $this->description,
             $parts = explode('|', $key);
             $html .= "<meta {$parts[0]}=\"{$parts[1]}\" content=\"{$value}\" />";
