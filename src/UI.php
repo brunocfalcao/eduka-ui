@@ -15,22 +15,19 @@ class UI
 
     public function renderHeaders()
     {
-        $context = Nereus::context();
+        $this->model = Nereus::context()['model'];
 
         $this->renderTitle();
+        $this->renderMetas();
 
-        if ($context['type'] == 'course') {
-            $this->model = Nereus::course();
-
-            $this->renderMetas();
+        if (app()->environment() != 'local' && !empty($this->model->clarity_code)) {
+            $this->renderClarityJS();
         }
-
-        $this->renderClarityJS();
     }
 
     private function renderClarityJS()
     {
-        $code = Nereus::course()->clarity_code;
+        $code = $this->model->clarity_code;
         echo <<<HTML
 <!-- clarity -->
 <script type="text/javascript">
@@ -46,9 +43,9 @@ HTML;
 
     private function renderTitle()
     {
-        $course = Nereus::course()->name;
+        $title = $this->model->name;
         echo <<<HTML
-        <title>$course</title>\n
+        <title>$title</title>\n
 HTML;
     }
 
