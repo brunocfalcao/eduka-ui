@@ -20,7 +20,7 @@ class UI
         $this->renderTitle();
         $this->renderMetas();
 
-        if (app()->environment() != 'local' && !empty($this->model->clarity_code)) {
+        if (app()->environment() != 'local' && ! empty($this->model->clarity_code)) {
             $this->renderClarityJS();
         }
     }
