@@ -17,14 +17,14 @@
     />
 --}}
 @props([
-    'entity' = null,
-    'button-link-left' => '#',
-    'button-link-right' => '#',
-    'button-text-left' => 'Button 1',
-    'button-text-right' => 'Button 2',
+    'entity' => null,
+    'buttonLinkLeft' => '#',
+    'buttonLinkRight' => '#',
+    'buttonTextLeft' => 'Button 1',
+    'buttonTextRight' => 'Button 2',
 ])
 
 <div class="button-group" style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-    <a target="_new" href="{{ $props['button-link-left'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color'] }}; color: {{ $entity->theme['button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-left'] }}</a>
-    <a target="_new" href="{{ $props['button-link-right'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color'] }}; color: {{ $entity->theme['button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-right'] }}</a>
+    <a target="_new" href="{{ $buttonLinkLeft }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['email-button-color'] }}; color: {{ $entity->theme['email-button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $buttonTextLeft }}</a>
+    <a target="_new" href="{{ $buttonLinkRight }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['email-button-color'] }}; color: {{ $entity->theme['email-button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $buttonTextRight }}</a>
 </div>

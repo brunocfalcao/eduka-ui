@@ -13,4 +13,4 @@
     'entity' => null
 ])
 
-<div class="sub-line" style="font-size: 12px; color: {{ $entity->theme['text-color'] }}; text-align: center; margin: 20px 0;">{{ $slot }}</div>
+<div class="sub-line" style="font-size: 12px; color: {{ $entity->theme['email-text-color'] }}; text-align: center; margin: 20px 0;">{{ $slot }}</div>

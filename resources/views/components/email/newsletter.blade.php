@@ -43,7 +43,7 @@
             margin: 20px auto;
             padding: 10px;
             text-align: center;
-            background-color: {{ $entity->theme['button-color'] }};
+            background-color: {{ $entity->theme['email-button-color'] }};
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
@@ -56,7 +56,7 @@
         }
         .sub-line {
             font-size: 12px;
-            color: {{ $entity->theme['text-color'] }};
+            color: {{ $entity->theme['email-text-color'] }};
             text-align: center;
             margin: 20px 0;
         }
@@ -92,15 +92,15 @@
         }
     </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px 0; background-color: {{ $entity->theme['background-color'] }};">
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px 0; background-color: {{ $entity->theme['email-background-color'] }};">
 
 <!-- Preview Text -->
 <span style="display: none; visibility: hidden; opacity: 0; height: 0; width: 0; overflow: hidden; position: absolute; z-index: -1;">{{ $preview }}</span>
 
-<x-email::header :backgroundColor="{{ $entity->theme['background-color'] }}"/>
+<x-email::header :entity="$entity"/>
 
 <!-- Container Start -->
-<div style="max-width: 600px; margin: 0 auto; background-color: {{ $entity->theme['container-color'] }}; padding: 20px; border: 1px solid #e0e0e0;">
+<div style="max-width: 600px; margin: 0 auto; background-color: {{ $entity->theme['email-container-color'] }}; padding: 20px; border: 1px solid #e0e0e0;">
 
     <!-- Content Start -->
     <div style="padding: 20px; text-align: left;">
@@ -111,7 +111,7 @@
 </div>
 <!-- Container End -->
 
-<x-email::footer :entity="{{ $entity }}" />
+<x-email::footer :entity="$entity" />
 
 </body>
 </html>

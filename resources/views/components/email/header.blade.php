@@ -18,6 +18,6 @@
     'src' => "https://placehold.co/150x50"
 ])
 
-<div style="text-align: center; padding: 20px 0; background-color: {{ $entity->theme['background-color'] }};">
+<div style="text-align: center; padding: 20px 0; background-color: {{ $entity->theme['email-background-color'] }};">
     <img src="{{ $src }}" alt="{{ $alt ?? $entity->domain }}" style="max-width: 100%; height: auto;">
 </div>
