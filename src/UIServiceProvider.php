@@ -11,6 +11,7 @@ class UIServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'ui');
         Blade::anonymousComponentPath(__DIR__.'/../resources/views/components/email', 'email');
+        Blade::anonymousComponentPath(__DIR__.'/../resources/views/components/dashboard', 'dashboard');
     }
 
     public function register()
