@@ -30,7 +30,9 @@
     },
     "extra": {
         "laravel": {
-            "providers": [],
+            "providers": [
+                "Eduka\\UI\\UIServiceProvider"
+            ],
             "aliases": {
                 "UI": "Eduka\\UI\\Facades\\UI"
             }
