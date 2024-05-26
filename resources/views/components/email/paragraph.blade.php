@@ -10,7 +10,7 @@
     </x-email::paragraph>
 --}}
 @props([
-    'theme' => null
+    'entity' => null
 ])
 
 <p style="line-height: 1.6; margin: 20px 0; color: {{ $entity->theme['text-color'] }};">{{ $slot }}</p>

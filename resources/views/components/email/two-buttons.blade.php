@@ -25,6 +25,6 @@
 ])
 
 <div class="button-group" style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-    <a target="_new" href="{{ $props['button-link-left'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color-left'] }}; color: {{ $entity->theme['text-color-left'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-left'] }}</a>
-    <a target="_new" href="{{ $props['button-link-right'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color-right'] }}; color: {{ $entity->theme['text-color-right'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-right'] }}</a>
+    <a target="_new" href="{{ $props['button-link-left'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color'] }}; color: {{ $entity->theme['button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-left'] }}</a>
+    <a target="_new" href="{{ $props['button-link-right'] }}" class="button" style="display: block; width: 200px; margin: 0; padding: 10px; text-align: center; background-color: {{ $entity->theme['button-color'] }}; color: {{ $entity->theme['button-text-color'] }}; text-decoration: none; border-radius: 5px;">{{ $props['button-text-right'] }}</a>
 </div>

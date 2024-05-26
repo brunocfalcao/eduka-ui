@@ -43,7 +43,7 @@
             margin: 20px auto;
             padding: 10px;
             text-align: center;
-            background-color: {{ $entity->theme['buttonColor'] }};
+            background-color: {{ $entity->theme['button-color'] }};
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
@@ -56,7 +56,7 @@
         }
         .sub-line {
             font-size: 12px;
-            color: {{ $entity->theme['textColor'] }};
+            color: {{ $entity->theme['text-color'] }};
             text-align: center;
             margin: 20px 0;
         }
