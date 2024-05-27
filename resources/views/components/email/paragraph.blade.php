@@ -1,16 +1,3 @@
-{{--
-    Component: Paragraph
-    Variables:
-    - entity (object) : The course or backend domain model.
-
-    Example Usage:
-    <x-email::paragraph
-        :entity="$entity">
-    This is a paragraph text.
-    </x-email::paragraph>
---}}
-@props([
-    'entity' => null
-])
-
-<p style="line-height: 1.6; margin: 20px 0; color: {{ $entity->theme['email-text-color'] }};">{{ $slot }}</p>
+<p style="line-height: 1.6em; padding-top: 20px;">
+    {{ $slot }}
+</p>
