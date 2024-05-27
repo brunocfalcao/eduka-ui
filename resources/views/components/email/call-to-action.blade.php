@@ -6,7 +6,7 @@
     'button_bg_color' => '#22BC66' // Default to green
 ])
 
-<table class="discount" align="center" width="100%" cellpadding="0" cellspacing="0">
+<table class="discount" align="center" width="100%" cellpadding="0" cellspacing="0" style="padding-bottom: 20px;">
     <tr>
         <td align="center">
             <h1 class="discount_heading">{{ $heading }}</h1>
