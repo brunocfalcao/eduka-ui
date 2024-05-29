@@ -1,5 +1,5 @@
 @props([
-    'themeColor' => '#3869D4',
+    'primaryColor' => '#3869D4',
     'secondaryColor' => '#22BC66',
     'dangerColor' => '#FF6136'
 ])
@@ -30,7 +30,7 @@
     }
 
     a {
-        color: {{ $themeColor }};
+        color: {{ $primaryColor }};
     }
 
     a img {
@@ -303,11 +303,11 @@
 
     /* Buttons ------------------------------ */
     .button {
-        background-color: {{ $themeColor }};
-        border-top: 10px solid {{ $themeColor }};
-        border-right: 18px solid {{ $themeColor }};
-        border-bottom: 10px solid {{ $themeColor }};
-        border-left: 18px solid {{ $themeColor }};
+        background-color: {{ $primaryColor }};
+        border-top: 10px solid {{ $primaryColor }};
+        border-right: 18px solid {{ $primaryColor }};
+        border-bottom: 10px solid {{ $primaryColor }};
+        border-left: 18px solid {{ $primaryColor }};
         display: inline-block;
         color: #FFF;
         text-decoration: none;

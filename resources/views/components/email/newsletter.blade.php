@@ -1,6 +1,6 @@
 @props([
     'title' => 'Welcome to [Product Name]!',
-    'themeColor' => '#3869D4',
+    'primaryColor' => '#3869D4',
     'secondaryColor' => '#22BC66',
     'dangerColor' => '#FF6136'
 ])
@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>{{ $title }}</title>
         <x-email::css
-            :themeColor="$themeColor"
+            :primaryColor="$primaryColor"
             :secondaryColor="$secondaryColor"
             :dangerColor="$dangerColor"
         />
