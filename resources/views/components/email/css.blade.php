@@ -9,6 +9,8 @@
     *:not(br):not(tr):not(html) {
         font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
@@ -25,6 +27,7 @@
     ul,
     ol,
     blockquote {
+        margin: 0 0 1em;
         line-height: 1.6em;
         text-align: left;
     }
@@ -359,6 +362,7 @@
 
     p {
         margin-top: 0;
+        margin-bottom: 1em;
         color: #74787E;
         font-size: 16px;
         line-height: 1.6em;

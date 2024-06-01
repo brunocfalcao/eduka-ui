@@ -1,1 +1,1 @@
-<p class="sub" style="padding-top: 20px;">{{ $slot }}</p>
+<p class="sub" style="padding-top: 10px; padding-bottom: 10px">{{ $slot }}</p>
